@@ -1,0 +1,68 @@
+@media screen and (max-width: 800px) {
+  .profile_pic, .table_style, .body_style, .form_style, .button_style {
+    width: 100%;
+  }
+}
+.profile-pic {
+  color: transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.profile-pic img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 165px;
+  height: 165px;
+  border-radius: 100px;
+}
+.profile-pic .-label {
+  cursor: pointer;
+  height: 165px;
+  width: 165px;
+}
+.profile-pic span {
+  display: inline-flex;
+  padding: 0.2em;
+  height: 2em;
+}
+
+.t {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+.t .form-control {
+  height: 25px;
+}
+.t label {
+  font-size: 1.5rem;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("pexels.jpg");
+  background-size: cover;
+}
+
+form {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media screen and (max-width: 800px) {
+  .profile_pic, .t, body, form {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=userprofile.css.map */

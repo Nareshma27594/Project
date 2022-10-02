@@ -1,0 +1,33 @@
+@import '_mixin';
+
+.profile-pic {
+
+    @include profile_pic
+}
+
+.t{
+    @include table_style
+  }
+
+  body {
+
+    @include body_style
+  }
+
+  form{
+
+    @include form_style
+  }
+
+  .button{
+
+    @include button_style
+
+  }
+
+  @media screen and (max-width: 800px) {
+    .profile_pic, .t, body, form {
+      width: 100%;
+    }
+  }
+  

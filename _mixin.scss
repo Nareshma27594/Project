@@ -1,0 +1,88 @@
+@import "_var";
+
+@mixin profile-pic{
+
+  color: transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    border-radius: 100px;
+  }
+  .-label {
+    cursor: pointer;
+    height: 165px;
+    width: 165px;
+  }
+  
+//   :hover .-label {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: rgba(0, 0, 0, 0.8);
+//   z-index: 10000;
+//   color: #fafafa;
+//   transition: background-color 0.2s ease-in-out;
+//   border-radius: 100px;
+//   margin-bottom: 0;
+// }
+
+span {
+  display: inline-flex;
+  padding: 0.2em;
+  height: 2em;
+}
+}
+
+@mixin table_style {
+
+  border-collapse:separate;
+  border-spacing:0 15px;
+
+  .form-control{
+
+    height: 25px;
+  
+  }
+
+  label{
+    font-size: 1.5rem;
+  }
+  
+}
+
+@mixin body_style{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("pexels.jpg");
+    background-size: cover;
+  
+}
+
+@mixin form_style{
+    height: fit-content;
+    width: fit-content;
+
+}
+
+@mixin button_style
+{
+
+}
+
+@media screen and (max-width: 800px) {
+  .profile_pic, .table_style, .body_style, .form_style, .button_style {
+    width: 100%;
+  }
+}
