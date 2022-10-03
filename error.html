@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .mainDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("fang.jpg");
+        background-size: cover;
+        height: 100vh;
+      }
+
+      .cardStyle {
+        width: 500px;
+        border-color: white;
+        padding: 36px 0;
+        margin: 30px 0;
+      }
+
+      img {
+        max-height: 250px;
+        width: 250px;
+        margin: auto;
+        display: flex;
+      }
+
+      .formTitle {
+        margin-top: 50px;
+        color: black;
+        text-align: center;
+      }
+
+      .buttonWrapper {
+        margin-top: 40px;
+      }
+
+      .submitButton {
+        width: 70%;
+        height: 40px;
+        margin: auto;
+        display: block;
+        color: white;
+        border-color: #065492;
+        border-radius: 4px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 800px) {
+        .mainDiv{
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mainDiv">
+      <div class="cardStyle">
+        <form action="" method="post" name="signupForm" id="signupForm">
+          <img src="oops.webp" />
+
+          <h2 class="formTitle">LOGIN NOT FOUND</h2>
+
+          <div class="buttonWrapper">
+            <button
+              type="submit"
+              style="background-color: palegreen"
+              id="submitButton"
+              class="submitButton pure-button pure-button-primary"
+            >
+              <span><a href="#" id="log">PLEASE LOGIN</a></span>
+            </button>
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
